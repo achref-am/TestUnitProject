@@ -1,0 +1,21 @@
+<table >
+  <tr style="position: relative;">
+<td>
+<div style="width: 25px;height: 25px;background-color: brown;" *ngIf="Qte_Article != ''">
+  
+</div>
+</td>
+<td>
+<div>
+  <h4 [ngStyle]="{color:getColor()}">
+  Article : {{Des_Article}} | {{Prix_Article}} | {{getQteArticle()}}
+</h4>
+</div>
+
+
+<div>
+<input  type="text" [(ngModel)]="Qte_Article">
+</div>
+
+</tr>
+</table>
